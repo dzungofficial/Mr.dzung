@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derick Mushi | Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Theme Toggle -->
+     <button class="theme-toggle" aria-label="Theme switcher">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo gradient-text">//DZUNG</a>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Post Header -->
+    <section id="blog-post-header">
+        <div class="container">
+            <h1>Becoming a Web Developer: A Comprehensive Guide</h1>
+            <p class="meta">Published on July 15, 2023 | 15 min read</p>
+            <img src="assets/images/blog7.jpg" alt="Web Developer">
+        </div>
+    </section>
+
+    <!-- Blog Post Content -->
+    <section id="blog-post-content" class="section">
+        <div class="container">
+            <h2>Introduction</h2>
+            <p>Web development is a dynamic and rewarding field that combines creativity and technical skills. In this guide, we'll walk you through everything you need to know to become a successful web developer.</p>
+
+            <h2>1. Learn the Basics</h2>
+            <p>Start with the fundamentals: HTML, CSS, and JavaScript.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Web Page&lt;/title&gt;
+    &lt;style&gt;
+        body { font-family: Arial, sans-serif; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;script&gt;
+        console.log('Welcome to web development!');
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h2>2. Choose a Specialization</h2>
+            <p>Decide whether you want to focus on frontend, backend, or full-stack development.</p>
+            <ul>
+                <li><strong>Frontend</strong>: HTML, CSS, JavaScript, React, Vue.js</li>
+                <li><strong>Backend</strong>: Node.js, Python, Ruby, databases, APIs</li>
+                <li><strong>Full-Stack</strong>: Combination of frontend and backend</li>
+            </ul>
+
+            <h2>3. Master Version Control</h2>
+            <p>Learn Git and GitHub to manage your code and collaborate with others.</p>
+            <pre><code>git init
+git add .
+git commit -m "Initial commit"
+git push origin main</code></pre>
+
+            <h2>4. Build Projects</h2>
+            <p>Apply your skills by building real-world projects like portfolios, blogs, or e-commerce sites.</p>
+            <pre><code>// Example: Simple To-Do List
+const tasks = [];
+function addTask(task) {
+    tasks.push(task);
+}</code></pre>
+
+            <h2>5. Learn Frameworks and Libraries</h2>
+            <p>Frameworks like React, Angular, and Express.js can help you build applications faster.</p>
+            <pre><code>// React Example
+function App() {
+    return &lt;h1&gt;Hello, React!&lt;/h1&gt;;
+}</code></pre>
+
+            <h2>6. Understand APIs</h2>
+            <p>Learn how to create and consume APIs to connect your frontend and backend.</p>
+            <pre><code>// Express.js API Example
+app.get('/api/users', (req, res) => {
+    res.json([{ name: 'John' }, { name: 'Jane' }]);
+});</code></pre>
+
+            <h2>7. Stay Updated</h2>
+            <p>Web development is constantly evolving. Follow blogs, attend webinars, and join communities to stay updated.</p>
+
+            <h2>8. Build a Portfolio</h2>
+            <p>Showcase your skills and projects in a portfolio website to attract potential employers or clients.</p>
+
+            <h2>Conclusion</h2>
+            <p>Becoming a web developer is a journey that requires continuous learning and practice. By mastering the fundamentals, building projects, and staying updated, you can build a successful career in web development.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Derick Mushi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/themeManager.js"></script>
+</body>
+</html>

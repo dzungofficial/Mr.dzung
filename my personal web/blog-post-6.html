@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derick Mushi | Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Theme Toggle -->
+     <button class="theme-toggle" aria-label="Theme switcher">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo gradient-text">//DM</a>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Blog Post Header -->
+    <section id="blog-post-header">
+        <div class="container">
+            <h1>Learning Backend Development: A Beginner's Guide</h1>
+            <p class="meta">Published on July 20, 2023 | 12 min read</p>
+            <img src="assets/images/blog6.png" alt="Backend Development">
+        </div>
+    </section>
+
+    <!-- Blog Post Content -->
+    <section id="blog-post-content" class="section">
+        <div class="container">
+            <h2>Introduction</h2>
+            <p>Backend development is the backbone of any web application. It involves server-side logic, databases, and APIs. In this guide, we'll walk you through the essential skills and tools you need to get started as a backend developer.</p>
+
+            <h2>1. Learn a Programming Language</h2>
+            <p>Start with a backend-friendly language like JavaScript (Node.js), Python, or Ruby.</p>
+            <pre><code>// Node.js Example
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.end('Hello, World!');
+});
+
+server.listen(3000);</code></pre>
+
+            <h2>2. Understand Databases</h2>
+            <p>Learn how to work with databases like MySQL, PostgreSQL, or MongoDB.</p>
+            <pre><code>// MongoDB Example
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/mydb', { useNewUrlParser: true });
+
+const userSchema = new mongoose.Schema({ name: String });
+const User = mongoose.model('User', userSchema);</code></pre>
+
+            <h2>3. Master APIs</h2>
+            <p>APIs (Application Programming Interfaces) allow your backend to communicate with the frontend or other services.</p>
+            <pre><code>// Express.js API Example
+const express = require('express');
+const app = express();
+
+app.get('/api/users', (req, res) => {
+    res.json([{ name: 'John' }, { name: 'Jane' }]);
+});
+
+app.listen(3000);</code></pre>
+
+            <h2>4. Use Frameworks</h2>
+            <p>Frameworks like Express.js (Node.js), Django (Python), or Ruby on Rails can speed up development.</p>
+            <pre><code>// Express.js Example
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+});
+
+app.listen(3000);</code></pre>
+
+            <h2>5. Learn Authentication and Authorization</h2>
+            <p>Secure your applications by implementing user authentication and authorization.</p>
+            <pre><code>// JWT Authentication Example
+const jwt = require('jsonwebtoken');
+
+const token = jwt.sign({ userId: 123 }, 'secretKey', { expiresIn: '1h' });</code></pre>
+
+            <h2>6. Explore Cloud Services</h2>
+            <p>Learn how to deploy and scale your applications using cloud platforms like AWS, Google Cloud, or Azure.</p>
+            <pre><code>// AWS S3 Example
+const AWS = require('aws-sdk');
+const s3 = new AWS.S3();
+
+s3.upload({ Bucket: 'my-bucket', Key: 'file.txt', Body: 'Hello, S3!' }, (err, data) => {
+    if (err) console.error(err);
+    else console.log('File uploaded:', data.Location);
+});</code></pre>
+
+            <h2>7. Build Projects</h2>
+            <p>The best way to learn is by doing. Build projects like REST APIs, authentication systems, or full-stack applications.</p>
+
+            <h2>Conclusion</h2>
+            <p>Backend development is a challenging but rewarding field. By mastering programming languages, databases, APIs, and cloud services, you can build powerful and scalable web applications.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Derick Mushi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/themeManager.js"></script>
+</body>
+</html>

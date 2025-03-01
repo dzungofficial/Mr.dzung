@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derick Mushi | Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Theme Toggle -->
+     <button class="theme-toggle" aria-label="Theme switcher">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo gradient-text">//DZUNG</a>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Blog Post Header -->
+    <section id="blog-post-header">
+        <div class="container">
+            <h1>Mastering React Hooks</h1>
+            <p class="meta">Published on August 10, 2023 | 7 min read</p>
+            <img src="assets/images/react hooks.png" alt="React Hooks">
+        </div>
+    </section>
+
+    <!-- Blog Post Content -->
+    <section id="blog-post-content" class="section">
+        <div class="container">
+            <h2>Introduction</h2>
+            <p>React Hooks revolutionized the way we write components in React. They allow you to use state and other React features without writing a class. In this post, we'll dive deep into React Hooks and learn how to use them effectively.</p>
+
+            <h2>1. useState: Managing State</h2>
+            <p>The <code>useState</code> hook is the most basic and commonly used hook. It allows you to add state to functional components.</p>
+            <pre><code>const [count, setCount] = useState(0);</code></pre>
+            <p>Here, <code>count</code> is the state variable, and <code>setCount</code> is the function to update it.</p>
+
+            <h2>2. useEffect: Side Effects</h2>
+            <p>The <code>useEffect</code> hook lets you perform side effects in functional components, such as data fetching or DOM manipulation.</p>
+            <pre><code>useEffect(() => {
+    document.title = `You clicked ${count} times`;
+}, [count]);</code></pre>
+            <p>The second argument is an array of dependencies. The effect will only run when these dependencies change.</p>
+
+            <h2>3. useContext: Global State</h2>
+            <p>The <code>useContext</code> hook allows you to access the value of a context without wrapping your component in a <code>Context.Consumer</code>.</p>
+            <pre><code>const theme = useContext(ThemeContext);</code></pre>
+
+            <h2>4. useReducer: Complex State Logic</h2>
+            <p>For more complex state logic, the <code>useReducer</code> hook is a great alternative to <code>useState</code>.</p>
+            <pre><code>const [state, dispatch] = useReducer(reducer, initialState);</code></pre>
+
+            <h2>5. Custom Hooks</h2>
+            <p>You can create your own hooks to reuse stateful logic across multiple components.</p>
+            <pre><code>function useCustomHook() {
+    const [value, setValue] = useState(null);
+    useEffect(() => {
+        // Custom logic
+    }, []);
+    return value;
+}</code></pre>
+
+            <h2>Conclusion</h2>
+            <p>React Hooks provide a powerful and flexible way to manage state and side effects in functional components. By mastering these hooks, you can write cleaner, more maintainable React code.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Derick Mushi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/themeManager.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

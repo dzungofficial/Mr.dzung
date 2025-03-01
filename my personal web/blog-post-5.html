@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derick Mushi | Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Theme Toggle -->
+     <button class="theme-toggle" aria-label="Theme switcher">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo gradient-text">//DZUNG</a>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Blog Post Header -->
+    <section id="blog-post-header">
+        <div class="container">
+            <h1>Learning Frontend Development: A Beginner's Guide</h1>
+            <p class="meta">Published on July 25, 2023 | 10 min read</p>
+            <img src="assets/images/blog5.png" alt="Frontend Development">
+        </div>
+    </section>
+
+    <!-- Blog Post Content -->
+    <section id="blog-post-content" class="section">
+        <div class="container">
+            <h2>Introduction</h2>
+            <p>Frontend development is the art of creating the visual and interactive parts of a website. In this guide, we'll walk you through the essential skills and tools you need to get started as a frontend developer.</p>
+
+            <h2>1. Learn HTML: The Structure</h2>
+            <p>HTML (HyperText Markup Language) is the backbone of any website. It defines the structure and content of web pages.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my first web page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h2>2. Master CSS: The Style</h2>
+            <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It controls colors, fonts, spacing, and more.</p>
+            <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #6C63FF;
+}</code></pre>
+
+            <h2>3. Understand JavaScript: The Interactivity</h2>
+            <p>JavaScript adds interactivity to your website. It allows you to create dynamic content, handle user input, and more.</p>
+            <pre><code>document.querySelector('h1').addEventListener('click', () => {
+    alert('Hello, World!');
+});</code></pre>
+
+            <h2>4. Explore Frameworks and Libraries</h2>
+            <p>Frameworks like React, Vue, and Angular can help you build complex applications more efficiently.</p>
+            <pre><code>// React Example
+function App() {
+    return &lt;h1&gt;Hello, React!&lt;/h1&gt;;
+}</code></pre>
+
+            <h2>5. Practice Responsive Design</h2>
+            <p>Ensure your website looks great on all devices by using responsive design techniques like media queries.</p>
+            <pre><code>@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}</code></pre>
+
+            <h2>6. Use Version Control</h2>
+            <p>Learn Git and GitHub to track changes, collaborate with others, and manage your projects.</p>
+            <pre><code>git init
+git add .
+git commit -m "Initial commit"</code></pre>
+
+            <h2>7. Build Projects</h2>
+            <p>The best way to learn is by doing. Build projects like portfolios, blogs, or small web apps to practice your skills.</p>
+
+            <h2>Conclusion</h2>
+            <p>Frontend development is a rewarding field that combines creativity and technical skills. By mastering HTML, CSS, and JavaScript, and exploring modern tools and frameworks, you can build amazing websites and applications.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Derick Mushi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/themeManager.js"></script>
+</body>
+</html>

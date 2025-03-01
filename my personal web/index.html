@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derick Mushi | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Theme switcher">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo gradient-text">//DZUNG</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="assets/images/profile.jpg" alt="Derick Mushi" class="profile-img">
+                <h1>Derick "Dzung" Mushi</h1>
+                <p class="tagline">Web Developer | UI/UX Enthusiast</p>
+                <div class="social-boxes">
+                    <div class="social-box">
+                      <div class="social-front">
+                        <i class="fab fa-facebook"></i>
+                        <p>Facebook</p>
+                      </div>
+                      <div class="social-back">
+                        <a href="https://web.facebook.com/callmedzung" target="_blank">Visit Facebook</a>
+                      </div>
+                    </div>
+                    <div class="social-box">
+                      <div class="social-front">
+                        <i class="fab fa-twitter"></i>
+                        <p>Twitter</p>
+                      </div>
+                      <div class="social-back">
+                        <a href="https://twitter.com" target="_blank">Visit Twitter</a>
+                      </div>
+                    </div>
+                    <div class="social-box">
+                      <div class="social-front">
+                        <i class="fab fa-instagram"></i>
+                        <p>Instagram</p>
+                      </div>
+                      <div class="social-back">
+                        <a href="https://www.instagram.com/amazing_tips26?igsh=MXU2Zng0ajU5bDAyMg==" target="_blank">Visit Instagram</a>
+                      </div>
+                    </div>
+                    <div class="social-box">
+                      <div class="social-front">
+                        <i class="fab fa-linkedin"></i>
+                        <p>LinkedIn</p>
+                      </div>
+                      <div class="social-back">
+                        <a href="https://linkedin.com" target="_blank">Visit LinkedIn</a>
+                      </div>
+                    </div>
+                    
+                    <div class="social-box">
+                      <div class="social-front">
+                        <i class="fab fa-whatsapp"></i>
+                        <p>Whatsapp</p>
+                      </div>
+                      <div class="social-back">
+                        <a href="https://wa.me/255745199576" target="_blank">Visit Whatsapp</a>
+                      </div>
+                    </div>
+                    <div class="social-box">
+                      <div class="social-front">
+                        <i class="fab fa-medium"></i>
+                        <p>Medium</p>
+                      </div>
+                      <div class="social-back">
+                        <a href="https://medium.com" target="_blank">Visit Medium</a>
+                      </div>
+                    </div>
+                  </div>
+                <a href="#contact" class="cta-button">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Derick Mushi, a passionate web developer with expertise in building modern, responsive websites and applications. <br> I specialize in front-end development and love creating intuitive user experiences.</p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-code"></i>
+                    <h3>5+ Years of Experience</h3>
+                    <p>Building scalable and efficient web solutions.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Client-Focused</h3>
+                    <p>Delivering solutions tailored to client needs.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovative Thinker</h3>
+                    <p>Always exploring new technologies and trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-node"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <p>MongoDB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Derick is an exceptional developer who delivers high-quality work on time. Highly recommended!"</p>
+                    <h3>Salum Hassan</h3>
+                    <p>Class Mate, CBE</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Working with Derick was a pleasure. He understood our requirements perfectly."</p>
+                    <h3>Grolia Mushi</h3>
+                    <p>Founder, Startup purple sweet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="assets/images/blog1.jpg" alt="Blog Post 1">
+                    <h3>10 Tips for Better Web Development</h3>
+                    <p>Learn how to improve your web development skills with these practical tips.</p>
+                    <a href="blog-post-1.html" class="read-more">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <img src="assets/images/blog2.png" alt="Blog Post 2">
+                    <h3>Mastering React Hooks</h3>
+                    <p>A deep dive into React Hooks and how to use them effectively.</p>
+                    <a href="blog-post-2.html" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form" action="https://formsubmit.co/derickmushi80@gmail.com" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" name="text" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+       
+   
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Derick Mushi. All rights reserved.</p>
+            <p>created &breve; Designed by Mr.Dzung</p>
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/themeManager.js"></script>
+    <script src="scripts/projectLoader.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derick Mushi | Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Theme Toggle -->
+     <button class="theme-toggle" aria-label="Theme switcher">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo gradient-text">//DZUNG</a>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Post Header -->
+    <section id="blog-post-header">
+        <div class="container">
+            <h1>Building Scalable APIs with Node.js</h1>
+            <p class="meta">Published on August 5, 2023 | 6 min read</p>
+            <img src="assets/images/Node.js API.png" alt="Node.js API">
+        </div>
+    </section>
+
+    <!-- Blog Post Content -->
+    <section id="blog-post-content" class="section">
+        <div class="container">
+            <h2>Introduction</h2>
+            <p>Node.js is a powerful runtime for building scalable and efficient APIs. In this post, we'll explore best practices for designing and building scalable APIs using Node.js and Express.</p>
+
+            <h2>1. Use Express.js for Routing</h2>
+            <p>Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for building APIs.</p>
+            <pre><code>const express = require('express');
+const app = express();
+
+app.get('/api', (req, res) => {
+    res.send('Hello, World!');
+});
+
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});</code></pre>
+
+            <h2>2. Organize Your Code</h2>
+            <p>Keep your code modular and organized by separating routes, controllers, and services.</p>
+            <pre><code>// routes/userRoutes.js
+const express = require('express');
+const router = express.Router();
+const userController = require('../controllers/userController');
+
+router.get('/users', userController.getUsers);
+module.exports = router;</code></pre>
+
+            <h2>3. Use Middleware for Common Tasks</h2>
+            <p>Middleware functions can handle tasks like logging, authentication, and error handling.</p>
+            <pre><code>app.use((req, res, next) => {
+    console.log(`${req.method} ${req.url}`);
+    next();
+});</code></pre>
+
+            <h2>4. Implement Rate Limiting</h2>
+            <p>Protect your API from abuse by implementing rate limiting.</p>
+            <pre><code>const rateLimit = require('express-rate-limit');
+
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100 // limit each IP to 100 requests per windowMs
+});
+
+app.use(limiter);</code></pre>
+
+            <h2>5. Use Environment Variables</h2>
+            <p>Store sensitive information like API keys and database credentials in environment variables.</p>
+            <pre><code>require('dotenv').config();
+
+const dbPassword = process.env.DB_PASSWORD;</code></pre>
+
+            <h2>6. Optimize Database Queries</h2>
+            <p>Use indexing, caching, and efficient queries to improve database performance.</p>
+            <pre><code>// Example of an indexed query
+User.find({ email: 'user@example.com' }).exec();</code></pre>
+
+            <h2>7. Implement Caching</h2>
+            <p>Use caching to reduce the load on your server and improve response times.</p>
+            <pre><code>const redis = require('redis');
+const client = redis.createClient();
+
+client.set('key', 'value');
+client.get('key', (err, reply) => {
+    console.log(reply);
+});</code></pre>
+
+            <h2>Conclusion</h2>
+            <p>By following these best practices, you can build scalable and efficient APIs with Node.js. Remember to test your API thoroughly and monitor its performance in production.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Derick Mushi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/themeManager.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

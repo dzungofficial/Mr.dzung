@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derick Mushi | Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Theme Toggle -->
+     <button class="theme-toggle" aria-label="Theme switcher">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo gradient-text">//DZUNG</a>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Blog Post Header -->
+    <section id="blog-post-header">
+        <div class="container">
+            <h1>CSS Grid vs Flexbox: When to Use Which</h1>
+            <p class="meta">Published on August 1, 2023 | 8 min read</p>
+            <img src="assets/images/grid-vs-flexbox.png" alt="CSS Grid vs Flexbox">
+        </div>
+    </section>
+
+    <!-- Blog Post Content -->
+    <section id="blog-post-content" class="section">
+        <div class="container">
+            <h2>Introduction</h2>
+            <p>CSS Grid and Flexbox are two powerful layout systems in CSS, each with its own strengths and use cases. In this post, we'll explore the differences between them and when to use each.</p>
+
+            <h2>1. CSS Grid: Two-Dimensional Layouts</h2>
+            <p>CSS Grid is designed for creating complex, two-dimensional layouts. It allows you to define rows and columns and place items precisely within the grid.</p>
+            <pre><code>.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}</code></pre>
+            <p>Use CSS Grid when you need to create layouts with both rows and columns, such as dashboards or magazine-style layouts.</p>
+
+            <h2>2. Flexbox: One-Dimensional Layouts</h2>
+            <p>Flexbox is designed for one-dimensional layouts, either in a row or a column. It's perfect for aligning items within a container.</p>
+            <pre><code>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}</code></pre>
+            <p>Use Flexbox when you need to align items in a single direction, such as navigation menus or card layouts.</p>
+
+            <h2>3. When to Use Grid</h2>
+            <ul>
+                <li>Complex, two-dimensional layouts.</li>
+                <li>Precise control over rows and columns.</li>
+                <li>Overlapping elements.</li>
+            </ul>
+
+            <h2>4. When to Use Flexbox</h2>
+            <ul>
+                <li>One-dimensional layouts (rows or columns).</li>
+                <li>Aligning items within a container.</li>
+                <li>Dynamic content that needs to flex and grow.</li>
+            </ul>
+
+            <h2>5. Combining Grid and Flexbox</h2>
+            <p>In many cases, you can combine Grid and Flexbox to create powerful layouts. For example, use Grid for the overall page layout and Flexbox for aligning items within grid cells.</p>
+            <pre><code>.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}</code></pre>
+
+            <h2>Conclusion</h2>
+            <p>Both CSS Grid and Flexbox are essential tools for modern web development. By understanding their strengths and use cases, you can choose the right tool for your layout needs.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Derick Mushi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/themeManager.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
